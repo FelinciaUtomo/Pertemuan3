@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(),ResultActivity.class);
+                i.putExtra("info","info dari Main Activity");
 //                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.petra.ac.id"));
                 startActivity(i);
             }
