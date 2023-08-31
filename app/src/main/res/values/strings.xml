@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pertemuan 3</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="ResponseFalse">Jawaban Anda Salah</string>
+    <string name="ResponseTrue">Jawaban Anda Benar</string>
+    <string name="Q1">Jakarta adalah Ibukota Indonesia</string>
+    <string name="Q2">Jakarta adalah Ibukota Indonesia</string>
+    <string name="Q3">Jakarta adalah Ibukota Indonesia</string>
+    <string name="Q4">Jakarta adalah Ibukota Indonesia</string>
+    <string name="Q5">Jakarta adalah Ibukota Indonesia</string>
+    <string name="Q6">Jakarta adalah Ibukota Indonesia</string>
+</resources>
