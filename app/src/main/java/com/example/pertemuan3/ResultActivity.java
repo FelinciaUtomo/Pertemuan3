@@ -23,7 +23,7 @@ public class ResultActivity extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(),info,Toast.LENGTH_LONG).show();
 
-        int nilai = getIntent().getIntExtra("Nilai", 0);
+        int nilai = getIntent().getIntExtra("nilai", 0);
         TextScore.setText("Score:" + nilai);
     }
 }
