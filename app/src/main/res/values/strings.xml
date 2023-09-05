@@ -3,10 +3,10 @@
     <string name="welcome">Selamat Datang</string>
     <string name="ResponseFalse">Jawaban Anda Salah</string>
     <string name="ResponseTrue">Jawaban Anda Benar</string>
-    <string name="Q1">Jakarta adalah Ibukota Indonesia</string>
-    <string name="Q2">Jakarta adalah Ibukota Indonesia</string>
-    <string name="Q3">Jakarta adalah Ibukota Indonesia</string>
-    <string name="Q4">Jakarta adalah Ibukota Indonesia</string>
-    <string name="Q5">Jakarta adalah Ibukota Indonesia</string>
-    <string name="Q6">Jakarta adalah Ibukota Indonesia</string>
+    <string name="Q1">Akun debet dan akun kredit dalam akuntansi harus balance</string>
+    <string name="Q2">Pajak tidak wajib dibayar</string>
+    <string name="Q3">Wajib Pajak tidak perlu melakukan hitung, setor, dan lapor perpajakan</string>
+    <string name="Q4">Persamaan dasar akuntansi adalah Asset = Equity + Liability</string>
+    <string name="Q5">Wajib Pajak dibagi menjadi WPDN dan WPLN</string>
+    <string name="Q6">PPN bersifat mengurangi DPP</string>
 </resources>
