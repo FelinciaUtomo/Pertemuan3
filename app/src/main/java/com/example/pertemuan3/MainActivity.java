@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkAnswer(boolean b) {
         boolean TrueAnswer = QuestionBank[current].getAnswer();
-        if (TrueAnswer=b){
+        if (TrueAnswer==b){
             Toast.makeText(getApplicationContext(),R.string.ResponseTrue,Toast.LENGTH_LONG).show();
             QuestionBank[current].setAnswer(true);
             HasilAkhir++;
