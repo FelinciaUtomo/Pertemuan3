@@ -9,21 +9,21 @@ import android.widget.Toast;
 import com.google.android.material.color.utilities.Score;
 
 public class ResultActivity extends AppCompatActivity {
-    private TextView TextScore
+    private TextView TextScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        TextScore = findViewById(R.id.textView3);
+        TextScore = findViewById(R.id.TVScore);
 
         Bundle extras = getIntent().getExtras();
-        String info extras.getString("info");
+        String info = extras.getString("info");
 
         Toast.makeText(getApplicationContext(),info,Toast.LENGTH_LONG).show();
 
         int nilai = getIntent().getIntExtra("Nilai", 0);
-        TextScore.setText("Score:" + Score);
+        TextScore.setText("Score:" + nilai);
     }
 }

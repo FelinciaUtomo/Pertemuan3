@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.color.utilities.Score;
-
 public class MainActivity extends AppCompatActivity {
     //private Question question1 = new Question(R.string.Q1,true);
 
@@ -23,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 new Question(R.string.Q6,false),
     };
     private int current = 0;
+    private int HasilAkhir = 0;
     private TextView tv1, NilaiTV2;
     private Button bTrue;
     private Button bFalse;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv1 = findViewById(R.id.textView);
-        NilaiTV2 = findViewById(R.id.textView3);
+        NilaiTV2 = findViewById(R.id.TVScore);
         bTrue = findViewById(R.id.bTrue);
         bFalse = findViewById(R.id.bFalse);
         bNext = findViewById(R.id.bNext);
@@ -58,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 current = current + 1;
                 if (current>=QuestionBank.length){
                     Intent i = new Intent( getApplicationContext(), ResultActivity.class);
-                    i.putExtra("info", "info from Main Activity");
-                    i.putExtra("NilaiHasil", Score);
+                    i.putExtra("info", "Your Final Score");
+                    i.putExtra("NilaiHasil", HasilAkhir);
                     startActivity(i);
                 }
 
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(),ResultActivity.class);
                 i.putExtra("info","info dari Main Activity");
 //                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.petra.ac.id"));
-                i.putExtra("NilaiHasil", Score);
+                i.putExtra("NilaiHasil", HasilAkhir);
                 startActivity(i);
             }
         });
@@ -85,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
         int Question = QuestionBank[current].getResId();
         tv1.setText(Question);
 
-        TextView NilaiTV2 = findViewById(R.id.textView3);
-        NilaiTV2.setText("Score:" + Score);
+        TextView NilaiTV2 = findViewById(R.id.TVScore);
+        NilaiTV2.setText("Score:" + HasilAkhir);
     }
 
     private void checkAnswer(boolean b) {
@@ -94,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         if (TrueAnswer=b){
             Toast.makeText(getApplicationContext(),R.string.ResponseTrue,Toast.LENGTH_LONG).show();
             QuestionBank[current].setAnswer(true);
-            Score++;
+            HasilAkhir++;
         }else {
             Toast.makeText(getApplicationContext(),R.string.ResponseFalse,Toast.LENGTH_LONG).show();
             QuestionBank[current].setAnswer(false);
