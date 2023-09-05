@@ -16,7 +16,7 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        TextScore = findViewById(R.id.textView2);
+        TextScore = findViewById(R.id.textView3);
 
         Bundle extras = getIntent().getExtras();
         String info extras.getString("info");

@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv1 = findViewById(R.id.textView);
-        NilaiTV2 = findViewById(R.id.textView2);
+        NilaiTV2 = findViewById(R.id.textView3);
         bTrue = findViewById(R.id.bTrue);
         bFalse = findViewById(R.id.bFalse);
         bNext = findViewById(R.id.bNext);
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         int Question = QuestionBank[current].getResId();
         tv1.setText(Question);
 
-        TextView NilaiTV2 = findViewById(R.id.textView2);
+        TextView NilaiTV2 = findViewById(R.id.textView3);
         NilaiTV2.setText("Score:" + Score);
     }
 
